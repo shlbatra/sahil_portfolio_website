@@ -22,6 +22,29 @@ header {
   margin-bottom: 32px;
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile-image {
+  flex-shrink: 0;
+}
+
+.profile-image img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1a73e8;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.header-text {
+  flex-grow: 1;
+}
+
 h1 {
   font-size: 2.5rem;
   margin: 0 0 8px 0;
@@ -192,5 +215,16 @@ li {
   
   .timeframe {
     margin-left: 0;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .profile-image img {
+    width: 100px;
+    height: 100px;
   }
 }
