@@ -37,7 +37,6 @@ header {
   height: 130px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #222;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
@@ -119,7 +118,7 @@ h2 {
   top: 0;
   width: 75px;
   text-align: right;
-  color: #222;
+  color: #1a73e8;
   font-weight: 600;
   font-size: 0.9rem;
 }
@@ -291,6 +290,7 @@ li {
     margin-bottom: 12px;
     padding-left: 0;
     font-weight: 700;
+    color: #1a73e8;
   }
   
   
