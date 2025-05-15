@@ -104,7 +104,7 @@ h2 {
 .timeline {
   position: relative;
   padding-left: 50px;
-  margin-left: 20px;
+  margin-left: 40px;
   border-left: 2px solid #e3e7ea;
 }
 
@@ -117,23 +117,25 @@ h2 {
   position: absolute;
   left: -56px;
   top: 5px;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: #1a73e8;
   border: 2px solid #fff;
   box-shadow: 0 0 0 2px #1a73e8;
+  z-index: 2;
 }
 
 .timeline-date {
   position: absolute;
-  left: -130px;
+  left: -150px;
   top: 0;
   width: 80px;
   text-align: right;
   color: #1a73e8;
   font-weight: 600;
   font-size: 0.9rem;
+  z-index: 1;
 }
 
 .timeline-content {
@@ -285,7 +287,8 @@ li {
   /* Mobile timeline adjustments */
   .timeline {
     padding-left: 30px;
-    margin-left: 5px;
+    margin-left: 10px;
+    border-left-width: 2px;
   }
   
   .timeline-date {
@@ -294,18 +297,20 @@ li {
     top: 0;
     width: auto;
     text-align: left;
-    margin-bottom: 8px;
-    padding-left: 5px;
+    margin-bottom: 12px;
+    padding-left: 0;
+    font-weight: 700;
   }
   
   .timeline-dot {
     left: -36px;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
   }
   
   .timeline-content {
     padding-left: 10px;
+    margin-top: 5px;
   }
   
 }
