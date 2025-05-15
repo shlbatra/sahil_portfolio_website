@@ -46,6 +46,7 @@ header {
 .header-text {
   display: flex;
   flex-direction: column;
+  margin-left: 15px;
 }
 
 h1 {
@@ -392,6 +393,10 @@ li.indented {
   h1 {
     font-size: 2.2rem;
     text-align: center;
+  }
+  
+  .header-text {
+    margin-left: 0;
   }
   
   .headline {
