@@ -115,7 +115,7 @@ h2 {
 
 .timeline-dot {
   position: absolute;
-  left: -56px;
+  left: -46px;
   top: 5px;
   width: 8px;
   height: 8px;
@@ -128,9 +128,9 @@ h2 {
 
 .timeline-date {
   position: absolute;
-  left: -125px;
+  left: -100px;
   top: 0;
-  width: 80px;
+  width: 75px;
   text-align: right;
   color: #1a73e8;
   font-weight: 600;
