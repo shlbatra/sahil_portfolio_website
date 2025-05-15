@@ -141,53 +141,6 @@ h2 {
   position: relative;
 }
 
-.job-logo, .edu-logo {
-  position: absolute;
-  left: -15px;
-  top: 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #f0f0f0;
-  background-size: cover;
-  background-position: center;
-  border: 2px solid #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-/* Company logos */
-.shopify-logo {
-  background-color: #96bf48;
-}
-
-.dell-logo {
-  background-color: #007db8;
-}
-
-.gl-logo {
-  background-color: #f5821f;
-}
-
-.aon-logo {
-  background-color: #e31937;
-}
-
-.csc-logo {
-  background-color: #0073c6;
-}
-
-/* Education logos */
-.fourthbrain-logo {
-  background-color: #6c63ff;
-}
-
-.ut-logo {
-  background-color: #bf5700;
-}
-
-.ggs-logo {
-  background-color: #003366;
-}
 
 .job-header, .project-header {
   display: flex;
@@ -355,9 +308,4 @@ li {
     padding-left: 10px;
   }
   
-  .job-logo, .edu-logo {
-    width: 24px;
-    height: 24px;
-    left: -12px;
-  }
 }
