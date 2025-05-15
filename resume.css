@@ -113,29 +113,16 @@ h2 {
   margin-bottom: 40px;
 }
 
-.timeline-dot {
-  position: absolute;
-  left: -46px;
-  top: 5px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #1a73e8;
-  border: 2px solid #fff;
-  box-shadow: 0 0 0 2px #1a73e8;
-  z-index: 2;
-}
 
 .timeline-date {
   position: absolute;
-  left: -100px;
+  left: -85px;
   top: 0;
   width: 75px;
   text-align: right;
   color: #1a73e8;
   font-weight: 600;
   font-size: 0.9rem;
-  z-index: 1;
 }
 
 .timeline-content {
@@ -302,11 +289,6 @@ li {
     font-weight: 700;
   }
   
-  .timeline-dot {
-    left: -36px;
-    width: 8px;
-    height: 8px;
-  }
   
   .timeline-content {
     padding-left: 10px;
