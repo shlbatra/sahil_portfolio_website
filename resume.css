@@ -216,6 +216,11 @@ li {
   line-height: 1.5;
 }
 
+li.indented {
+  margin-left: 20px;
+  list-style-type: circle;
+}
+
 .edu-header {
   display: flex;
   flex-direction: column;
