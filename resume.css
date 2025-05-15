@@ -46,7 +46,7 @@ header {
 .header-text {
   display: flex;
   flex-direction: column;
-  margin-left: 15px;
+  margin-left: 40px;
 }
 
 h1 {
