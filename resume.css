@@ -185,7 +185,7 @@ h2 {
 .timeline-date {
   position: absolute;
   left: -85px;
-  top: 0;
+  top: 3px;
   width: 75px;
   text-align: right;
   color: #1a73e8;
@@ -196,6 +196,7 @@ h2 {
 .timeline-content {
   padding: 0 0 0 20px;
   position: relative;
+  margin-top: 0;
 }
 
 
@@ -259,6 +260,7 @@ li.indented {
   flex-direction: column;
   gap: 4px;
   margin-bottom: 10px;
+  margin-top: 2px;
 }
 
 .degree {
@@ -426,7 +428,7 @@ li.indented {
   
   .timeline-content {
     padding-left: 10px;
-    margin-top: 5px;
+    margin-top: 0;
   }
   
 }
