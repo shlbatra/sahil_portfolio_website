@@ -163,6 +163,29 @@ h2 {
   margin-bottom: 50px;
 }
 
+.company-logo {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+
+.shopify-logo {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg');
+  background-color: #96bf48;
+}
+
+.dell-logo {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/18/Dell_logo_2016.svg');
+  background-color: #007db8;
+}
+
 
 .timeline-date {
   position: absolute;
@@ -381,6 +404,12 @@ li.indented {
   .timeline-content {
     padding-left: 10px;
     margin-top: 5px;
+  }
+  
+  .company-logo {
+    left: -35px;
+    width: 24px;
+    height: 24px;
   }
   
 }
