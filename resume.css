@@ -46,7 +46,7 @@ header {
 .header-text {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
+  margin-left: 100px;
 }
 
 h1 {
@@ -59,8 +59,8 @@ h1 {
 .headline-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   margin-top: 10px;
 }
 
@@ -69,7 +69,7 @@ h1 {
   color: #444;
   margin: 0 0 30px 0;
   max-width: 600px;
-  text-align: center;
+  text-align: left;
 }
 
 .contact-info {
@@ -77,7 +77,7 @@ h1 {
   color: #555;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 24px;
   margin-top: 20px;
   position: relative;
