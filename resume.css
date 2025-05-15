@@ -196,6 +196,11 @@ h2 {
   font-weight: 600;
 }
 
+.at-symbol {
+  color: #666;
+  margin: 0 2px;
+}
+
 .company, .location {
   color: #666;
   display: flex;
@@ -203,9 +208,11 @@ h2 {
 }
 
 .company-inline-logo {
-  height: 24px;
-  margin-left: 0;
+  height: 82.5px;
+  margin-left: 4px;
+  margin-right: 4px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .timeframe {
