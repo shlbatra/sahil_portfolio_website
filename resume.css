@@ -96,8 +96,97 @@ h2 {
   padding-left: 10px;
 }
 
-.job, .project, .edu-entry {
+.job, .project {
   margin-bottom: 20px;
+}
+
+/* Timeline styles */
+.timeline {
+  position: relative;
+  padding-left: 50px;
+  margin-left: 20px;
+  border-left: 2px solid #e3e7ea;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -56px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #1a73e8;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #1a73e8;
+}
+
+.timeline-date {
+  position: absolute;
+  left: -130px;
+  top: 0;
+  width: 80px;
+  text-align: right;
+  color: #1a73e8;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.timeline-content {
+  padding: 0 0 0 20px;
+  position: relative;
+}
+
+.job-logo, .edu-logo {
+  position: absolute;
+  left: -15px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Company logos */
+.shopify-logo {
+  background-color: #96bf48;
+}
+
+.dell-logo {
+  background-color: #007db8;
+}
+
+.gl-logo {
+  background-color: #f5821f;
+}
+
+.aon-logo {
+  background-color: #e31937;
+}
+
+.csc-logo {
+  background-color: #0073c6;
+}
+
+/* Education logos */
+.fourthbrain-logo {
+  background-color: #6c63ff;
+}
+
+.ut-logo {
+  background-color: #bf5700;
+}
+
+.ggs-logo {
+  background-color: #003366;
 }
 
 .job-header, .project-header {
@@ -135,11 +224,11 @@ li {
   line-height: 1.5;
 }
 
-.edu-entry {
+.edu-header {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  margin-bottom: 16px;
+  gap: 4px;
+  margin-bottom: 10px;
 }
 
 .degree {
@@ -238,5 +327,37 @@ li {
   .profile-image img {
     width: 100px;
     height: 100px;
+  }
+  
+  /* Mobile timeline adjustments */
+  .timeline {
+    padding-left: 30px;
+    margin-left: 5px;
+  }
+  
+  .timeline-date {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: auto;
+    text-align: left;
+    margin-bottom: 8px;
+    padding-left: 5px;
+  }
+  
+  .timeline-dot {
+    left: -36px;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .timeline-content {
+    padding-left: 10px;
+  }
+  
+  .job-logo, .edu-logo {
+    width: 24px;
+    height: 24px;
+    left: -12px;
   }
 }
