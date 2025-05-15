@@ -219,6 +219,12 @@ li {
   line-height: 1.5;
 }
 
+.work-authorization p {
+  color: #444;
+  line-height: 1.5;
+  padding-left: 10px;
+}
+
 @media (min-width: 768px) {
   .skills-grid {
     grid-template-columns: 1fr 1fr;
