@@ -84,7 +84,7 @@ h1 {
 
 .social-icons {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   align-items: center;
 }
 
@@ -111,6 +111,11 @@ h1 {
 
 .linkedin-logo {
   border-radius: 4px;
+}
+
+.github-logo {
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 .email-text {
