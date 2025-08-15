@@ -2,26 +2,54 @@
 
 A clean, responsive web-based resume showcasing my professional experience, education, and projects in the field of Machine Learning and Data Science.
 
+## 🌐 Live Demo
+
+Visit the portfolio at: [https://shlbatra.github.io/sahil_portfolio_website](https://shlbatra.github.io/sahil_portfolio_website)
+
 ## Features
 
-- Clean, modern design
+- Clean, modern design with professional styling
 - Responsive layout for all devices
+- Company logos integrated in work experience timeline
 - Organized sections for:
-  - Work experience
-  - Education
-  - Skills
-  - Projects
+  - Professional header with profile image
+  - Work experience with visual timeline
+  - Personal projects with detailed descriptions
+  - Education background
+  - Technical skills categorized by domain
+  - Social media links
+
+## Project Structure
+
+```
+sahil_portfolio_website/
+├── index.html          # Entry point with redirect to resume.html
+├── resume.html         # Main portfolio page
+├── resume.css          # Styling and responsive design
+├── artifacts/          # Images and logos
+│   ├── image.png      # Profile image
+│   ├── shopify-logo.png
+│   ├── Dell-Logo.png
+│   ├── dxc_logo.png
+│   ├── aonhewitt_logo.jpeg
+│   └── great_learning_new_logo.png
+└── README.md          # This file
+```
 
 ## Technologies Used
 
 - HTML5
 - CSS3 (with Flexbox and Grid)
+- GitHub Pages for deployment
 
-## Viewing the Portfolio
 
-Simply open the `resume.html` file in any modern web browser to view the portfolio.
+## Local Development
 
-## Connect
+To view the portfolio locally:
+1. Clone the repository
+2. Open `resume.html` in any modern web browser
+3. Or use a local server: `python -m http.server 8000` and navigate to `http://localhost:8000`
 
-- Portfolio: [https://shlbatra.github.io/ml-portfolio](https://shlbatra.github.io/ml-portfolio)
-- Email: shlbatra123@gmail.com
+## Deployment
+
+The site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
