@@ -110,6 +110,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .social-logo {
@@ -155,13 +156,15 @@ h1 {
 .pdf-download-btn {
   background: transparent;
   border: none;
-  padding: 2px;
+  padding: 0;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
   transition: background-color 0.2s, transform 0.2s;
+  width: 40px;
+  height: 40px;
 }
 
 .pdf-download-btn:hover {
@@ -170,8 +173,8 @@ h1 {
 }
 
 .pdf-download-btn svg {
-  width: 40px;
-  height: 40px;
+  width: 28px;
+  height: 28px;
 }
 
 .pdf-text {
