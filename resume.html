@@ -15,6 +15,9 @@
         </div>
         <div class="header-text">
           <h1>SAHIL BATRA</h1>
+          <div class="pdf-email" id="pdf-email" style="display: none;">
+            <p>shlbatra123@gmail.com</p>
+          </div>
           <div class="headline-container">
             <p class="headline">Autodidact learner with a passion of building Machine Learning Systems & Teaching</p>
             <div class="contact-info">
@@ -32,6 +35,17 @@
                 <a href="https://github.com/shlbatra" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="social-logo github-logo">
                 </a>
+              </div>
+              <div class="icon-container">
+                <button id="download-pdf" class="pdf-download-btn" title="Download Resume as PDF">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" fill="#ffffff"/>
+                    <text x="12" y="17" text-anchor="middle" font-family="Arial, sans-serif" font-size="4" font-weight="bold" fill="#1a73e8">PDF</text>
+                    <circle cx="17" cy="17" r="4" fill="#dc3545"/>
+                    <path d="M15,15 L17,17 L19,15" stroke="white" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                    <path d="M17,13 L17,17" stroke="white" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -252,13 +266,56 @@
       <p>Canadian and Indian citizen, US H1B Visa and Australia/NZ Working Holiday Visa.</p>
     </section>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const gmailLogo = document.getElementById('gmail-logo');
       const emailText = document.getElementById('email-text');
+      const downloadPdfBtn = document.getElementById('download-pdf');
       
       gmailLogo.addEventListener('click', function() {
         emailText.classList.toggle('show');
+      });
+
+      downloadPdfBtn.addEventListener('click', function() {
+        // Hide the PDF button temporarily for a cleaner PDF
+        downloadPdfBtn.style.display = 'none';
+        
+        // Hide Gmail icon and show email text for PDF
+        const gmailContainer = gmailLogo.parentElement;
+        const pdfEmail = document.getElementById('pdf-email');
+        gmailContainer.style.display = 'none';
+        pdfEmail.style.display = 'block';
+        
+        const element = document.querySelector('.container');
+        const opt = {
+          margin: [0.5, 0.5, 0.5, 0.5],
+          filename: 'Sahil_Batra_Resume_ML_Engineer.pdf',
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: { 
+            scale: 2, 
+            useCORS: true,
+            letterRendering: true,
+            allowTaint: true 
+          },
+          jsPDF: { 
+            unit: 'in', 
+            format: 'letter', 
+            orientation: 'portrait' 
+          },
+          pagebreak: { 
+            mode: ['avoid-all', 'css', 'legacy'],
+            before: '.page-break-before',
+            after: '.page-break-after' 
+          }
+        };
+
+        html2pdf().set(opt).from(element).save().then(() => {
+          // Restore original state after download
+          downloadPdfBtn.style.display = 'flex';
+          gmailContainer.style.display = 'flex';
+          pdfEmail.style.display = 'none';
+        });
       });
     });
   </script>

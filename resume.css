@@ -152,6 +152,95 @@ h1 {
   to { opacity: 1; }
 }
 
+.pdf-download-btn {
+  background: transparent;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.pdf-download-btn:hover {
+  background: rgba(26, 115, 232, 0.1);
+  transform: scale(1.05);
+}
+
+.pdf-download-btn svg {
+  width: 32px;
+  height: 32px;
+}
+
+.pdf-text {
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.pdf-email {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.pdf-email p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #444;
+  font-weight: 400;
+}
+
+/* PDF-specific styles for better printing */
+@media print {
+  body {
+    background: white;
+    font-size: 11px;
+    line-height: 1.4;
+  }
+  
+  .container {
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 20px;
+    max-width: none;
+  }
+  
+  .pdf-download-btn {
+    display: none !important;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    page-break-after: avoid;
+  }
+  
+  h2 {
+    font-size: 1.1rem;
+    page-break-after: avoid;
+    margin-top: 20px;
+  }
+  
+  .timeline-item {
+    page-break-inside: avoid;
+    margin-bottom: 25px;
+  }
+  
+  .project {
+    page-break-inside: avoid;
+  }
+  
+  .skills-grid {
+    page-break-inside: avoid;
+  }
+  
+  /* Ensure profile image prints well */
+  .profile-image img {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
 section {
   margin-bottom: 32px;
 }
